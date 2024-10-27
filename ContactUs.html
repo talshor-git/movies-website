@@ -1,0 +1,83 @@
+﻿<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title>contact us</title>
+    <meta name="description" content="contact information to us" />
+    <meta name="keywords" content="contact, details" />
+    <meta name="TalShor,MayaCohen,StavBismut,YuvalBar" content="telem" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <!-- CSS -->
+    <!--<link href="styles/reset.css" rel="stylesheet" />-->
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <link rel="icon" href="pictures/siteLogo.png" />
+    <!-- Scripts -->
+    <script src="jScripts/jquery-3.6.0.min.js"></script>
+    <script src="jScripts/JavaScript.js" type="text/javascript"></script>
+</head>
+<body>
+
+        <header>
+            <h1>
+                <span class="text-part1">living in a</span>
+                <span class="text-part2">MOVIE</span>
+            </h1>
+            <h2>צור קשר</h2>
+        </header>
+        
+        <!--תפריט פירורי לחם -->
+        <nav id="navPiroryLehem">
+            <ol>
+                <li><a href="index.html"> עמוד ראשי</a></li>
+                <li><a href="Trailers and reviews.html"> טריילרים וביקורות</a></li>
+                <li class="notWoking"><a href="#">הזמנת כרטיסים</a></li>
+                <li><a href="birthday.html">אירועים בקולנוע</a></li>
+                <li><a href="ContactUs.html">צור קשר</a></li>
+                <li><a href="about.html">אודות האתר</a></li>
+                <li><a href=".//siteMap.html">מפת האתר</a></li>
+            </ol>
+        </nav>
+        <!-- הנחייה למילוי פרטים בטופס -->
+        <h3>נשמח לשמוע מכם! לכל שאלה, בקשה או הצעה, אתם מוזמנים ליצור איתנו קשר דרך הטופס המצורף. מלאו את פרטיכם ונחזור אליכם בהקדם האפשרי.​</h3>
+            <div class="mainText">
+        <!-- מבנה הטופס -->
+                <form>
+                    <label for="name">*שם מלא:</label>
+                    <br>
+                    <input type="text" id="name" name="name" required>
+                    <br>
+                    <label for="email">*אימייל:</label>
+                    <br>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+                    <label for="phone">*טלפון:</label>
+                    <br>
+                    <input type="tel" id="phone" name="phone" required>
+                    <br>
+                    *מין:
+                    <br>
+                    <label for="male">
+                        <input type="radio" id="male" name="gender" /> גבר
+                    </label>
+                    <br>
+                    <label for="femle">
+                        <input type="radio" id="femle" name="gender" /> אישה
+                    </label>
+                    <br>
+                    <label for="other">
+                        <input type="radio" id="other" name="gender" /> אחר
+                    </label>
+                    <br>
+                    <textarea id="comments" placeholder="הערות"></textarea>
+                    <br>
+                    <input type="submit" id="שלח" value="שלח"> 
+                    <div id="feedback"></div>
+                </form>
+        <!--סגיר לדף-->
+        <footer> 
+            <p class = "mainText">"To infinity and beyond"</p>  
+            <p class = "descriptionText">Buzz Lightyear</p>   
+           </footer>
+</body>
+</html>

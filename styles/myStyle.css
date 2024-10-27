@@ -1,0 +1,346 @@
+﻿/* הגדרות כלליות אתר  */
+body {
+    direction: rtl;
+    background-color: #F3F3E0;
+    font-family: 'ploni-regular-aaa';
+}
+
+/* הגדרת פונטים */
+@font-face {
+    font-family: 'ploni-yad-black-aaa';
+    src: url('../fonts/ploni-yad-black-aaa.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'ploni-yad-medium-aaa';
+    src: url('../fonts/ploni-yad-medium-aaa.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'ploni-regular-aaa';
+    src: url('../fonts/ploni-regular-aaa.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'waltograph42';
+    src: url('../fonts/waltograph42.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'ploni-yad-regular-aaa';
+    src: url('../fonts/ploni-yad-regular-aaa.otf') format('opentype');
+}
+
+
+/* הגדרת סוגי טקסט */
+h1 {
+    font-size: 120px;
+    text-align: center;
+    color:aliceblue;
+    margin-top: 0;
+}
+
+.text-part1 {
+    font-family: 'ploni-yad-black-aaa', sans-serif; /* הפונט עבור החלק הראשון */
+}
+
+.text-part2 {
+    font-family: 'waltograph42', sans-serif; /* הפונט עבור החלק השני */
+}
+
+h2 {
+    font-family: 'ploni-yad-medium-aaa', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: aliceblue;
+    margin-top: 0;
+}
+
+h3 {
+    font-family: 'ploni-yad-regular-aaa', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    position: relative;
+    right: 30px;
+}
+
+h4 {
+    font-family: 'ploni-yad-regular-aaa', sans-serif;
+    position: relative;
+    right: 30px;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.mainText {
+    font-family: 'ploni-regular-aaa', sans-serif;
+    position: relative;
+    right: 30px;
+    font-size: 20px;
+}
+
+.descriptionText {
+    font-family: 'ploni-regular-aaa', sans-serif;
+    position: relative;
+    right: 30px;
+    font-size: 15px;
+}
+
+header{
+    background-image:url("../pictures/backgroundMain1.png");
+    opacity:80%;
+}
+
+footer { /* הגדרת סגיר*/
+    text-align: center;
+    background-color:#ECD0EC;
+    color: black;
+    padding: 20px;
+    position: relative;
+}
+    footer a { /* קישור בסגיר*/
+        color: black;
+        text-decoration: underline;
+    }
+
+/* הגדרת תפריט ראשי*/
+[aria-label="main-nav"] {
+    text-align: center;
+    padding: 20px;
+}
+
+[aria-label="main-nav"] ul { /* הגדרות עיצוביות */
+    font-family: 'ploni-yad-regular-aaa', sans-serif;
+    list-style: none; /* ביטול נקודות של הרשימה */
+    margin: 0;
+    padding: 0;
+}
+
+[aria-label="main-nav"] ul li {
+    display: inline; /* הצגת כל פריט תפריט בשורה */
+    margin: 0px 15px;
+    position: relative;
+}
+
+[aria-label="main-nav"] ul li a { /* הגדרות עיצוביות */
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+}
+
+[aria-label="main-nav"] ul li a:hover {
+color: #3498db; /* שינוי צבע לקישור במעבר עכבר */
+border-bottom-color: #3498db; /* שינוי קו תחתון */
+}
+
+[aria-label="main-nav"] ul li ul /*תת תפריטים*/ {
+    display: none; /* תפריט נפתח מוסתר בהתחלה */
+    position: absolute;
+    top: 100%; /* ממקם מתחת לפריט שבתוכו */
+    padding: 10px;
+    min-width: 150px; /* רוחב מינימלי */
+}
+
+[aria-label="main-nav"] ul li:hover ul {
+    display: block; /* מוצג רק בעת hover */
+    width: 1450px;
+}
+
+[aria-label="main-nav"] ul li ul li {
+    display: block; /* מציג את תתי הנושאים בשורה אנכית */
+    margin-left: 150px;
+}
+
+[aria-label="main-nav"] ul li ul li a {
+    font-size: 18px; /* גודל קטן יותר לתת נושאים */
+    border-bottom: none; /* בלי קו תחתון בתתי נושאים */
+    color: black;
+}
+
+[aria-label="main-nav"] ul li ul li a:hover {
+    color: #3498db; /* שינוי צבע בהובר על תתי הנושאים */
+}
+
+/* תפריט פירורי לחם*/
+#navPiroryLehem ol li {
+    font-family: 'ploni-regular-aaa', sans-serif;
+    padding-top: 20px;
+    display: inline;
+}
+/*הגדרת חצים לפירורי לחם*/
+#navPiroryLehem ol li:after {
+    content: ">";
+}
+/*הגדרת שלאחרון לא יהיה חץ אחריו*/
+#navPiroryLehem ol li:last-child:after {
+    content: "";
+}
+
+/*הגדרת קישורים לא זמינים*/
+a[href="#"] /* לקישורים רגילים*/
+{
+    cursor: not-allowed;
+}
+
+nav a[href="#"]{ /* לקישורים בתפריט*/
+    cursor: not-allowed;
+}
+
+/* עיצוב סרטים - תמונות וכיתובים עמוד ראשי*/
+.movie-row {
+    text-align: center; /* מוודא שהאלמנטים יישרו במרכז השורה */
+}
+
+.movie { /*עמוד ראשי - שורת הסרטים */
+
+    display: inline-block; /* מאפשר מיקום של האלמנטים אחד ליד השני */
+    width: 150px; /* רוחב האלמנט */
+    padding: 0 50px; /* רווחים אופקיים בין האלמנטים */
+    margin-bottom: 20px; /* רווח בין השורות, אם יש יותר */
+    /*vertical-align: top;  מוודא שכל האלמנטים ייושרו למעלה */
+}
+
+    .movie img { /*עמוד ראשי -  הגדרות לכל פוסטר סרט */
+        width: 100%;
+        height: auto;
+        border: 2px solid #000;
+    }
+
+/* עמוד ראשי - שורת האולמות*/
+.theater-row {
+    text-align: center; /* מוודא שהאלמנטים ייושרו במרכז השורה */
+}
+
+.theater { /*עמוד ראשי -  הגדרות לכל חלק אולם */
+    display: inline-block; /* מאפשר מיקום של האלמנטים אחד ליד השני */
+    width: 300px; /* רוחב האלמנט */
+    padding: 0 50px; /* רווחים אופקיים בין האלמנטים */
+    margin-bottom: 20px; /* רווח בין השורות, אם יש יותר */
+    vertical-align: top; /* מוודא שכל האלמנטים ייושרו למעלה */
+}
+
+    .theater img { /*עמוד ראשי -  הגדרות לכל פוסטר אולם */
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+#birthdaySection { /* עיצוב אזור יום הולדת בעמוד הראשי*/
+    text-align: center;
+    margin: 40px 0;
+}
+
+    #birthdaySection img { /* עיצוב תמונת יום הולדת */
+        height: auto;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+/* עיצוב כפתור יום הולדת */
+#b {
+    background-color: #3498db; /* צבע התחלתי */
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: 'ploni-regular-aaa', sans-serif;
+    margin-top: 30px; /* מרווח מעל הכפתור */
+    margin-right: 650px;
+    display: block;
+}
+
+    #b:hover { /* עיצוב כפתור יום הולדת בעת מעבר עכבר*/
+        background-color: lightpink; /* צבע משתנה בעת לחיצה */
+        cursor: pointer;
+    }
+
+main {/*הגדרה כללית לעמוד ימי הולדת*/
+    padding: 20px;
+}
+
+section{ /*הגדרה כללית לכל חלק*/
+    margin-bottom: 50px;
+}
+
+.intro { /* דף ימי הולדת - מירכוז מלל */
+    text-align: center;
+}
+
+    .intro img {  /* דף ימי הולדת - הגדרות תמונת נושא */
+        display: inline-block;
+        max-width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .details{ /* דף ימי הולדת - צבע לסקשן מה תקבלו */
+        background-color:#ECD0EC;
+    }
+
+.package-options { /* הגדרות כלליות לשורת הכרטיסיות */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.package { /* הגדרות כלליות לכרטיסיית .package */
+    position: relative;
+    width: 30%;
+    min-width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    box-sizing: border-box; /* מבטיח שהריווח לא ישנה את הגודל הכולל */
+}
+
+.package h4 { /*כותרות לכרטיסיות*/
+    font-weight: bold; 
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+    .package img { /*תמונות לכרטיסיות*/
+        width: 100%;
+        height: auto;
+        z-index: 1; /*מבטיח שהתמונה תוצג מעל הכרטיסיה (עומק)*/
+        margin-top: 15px; /* ריווח בין התמונה לטקסט */
+    }
+
+.movie-discription { /* תיאור לפוסטרים של הסרטים בדף הטריילרים*/
+    font-family: 'ploni-regular-aaa', sans-serif;
+    right: 30px;
+    font-size: 20px;
+    position: relative; /* מאפשר מיקום התמונה בלי לחרוג מהתוכן */
+    margin-left: 250px; /* דוחף את הטקסט ימינה, כך שלא יחתך מהתמונה */
+    padding-top: 10px; /* מוסיף רווח כלשהו מעל התוכן */
+}
+
+.left-image { /* פוסטר 1 */
+    position: absolute;
+    top: 250px;
+    left: 50px;
+    width: 150px;
+}
+
+.left-image1 { /* פוסטר 2 */
+    position: absolute;
+    top: 550px;
+    left: 50px;
+    width: 150px;
+}
+
+.left-image2 { /* פוסטר 3 */
+    position: absolute;
+    top: 950px;
+    left: 50px;
+    width: 150px;
+}
+
+[aria-label="siteMap"] { /* הגדרת מפת אתר */
+font-family: 'ploni-yad-regular-aaa', sans-serif;
+font-size: 25px;
+}

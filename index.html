@@ -1,0 +1,142 @@
+﻿<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title>MainPage</title>
+    <meta name="description" content="MainPage" />
+    <meta name="keywords" content="movies, cinema" />
+    <meta name="TalShor,MayaCohen,StavBismut,YuvalBar" content="telem" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <!-- CSS -->
+    <!--<link href="styles/reset.css" rel="stylesheet" />-->
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <link rel="icon" href="pictures/siteLogo.png" />
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-3.6.0.min.js"></script>
+    <script src="jScripts/JavaScript.js" type="text/javascript">  </script>
+</head>
+<body>
+        <header>
+            <h1>
+                <span class="text-part1">living in a</span>
+                <span class="text-part2">MOVIE</span>
+            </h1>
+            <h2>סרטים בחוויה אחרת</h2>
+        </header>
+
+
+        <!-- תפריט ראשי-->
+        <nav aria-label="main-nav">
+            <ul>
+                <li><a href="Trailers and reviews.html"> טריילרים וביקורות</a></li>
+                <li><a href="#">הזמנת כרטיסים</a></li>
+                <li>
+                    <a href="#">אירועים בקולנוע</a>
+                    <ul>
+                        <li><a href="birthday.html">ימי הולדת </a></li>
+                        <li><a href="#">בת מצוות </a></li>
+                    </ul>
+                </li>
+                <li><a href="ContactUs.html">צור קשר</a></li>
+                <li><a href=".//about.html">אודות האתר</a></li>
+                <li><a href=".//siteMap.html">מפת האתר</a></li>
+            </ul>
+        </nav>
+        <br>
+        <br>
+        <br>
+        <!-- פתיחה כללית -->
+        <section id="introText">
+            <p class="mainText">
+                ברוכים הבאים ל-"Living in a Movie", המקום שבו חלומות קולנועיים מתגשמים! אנו מציעים חוויות קולנוע ייחודיות, החל מהקרנות הסרטים המרגשות ביותר ועד ימי הולדת בלתי נשכחים.
+            </p>
+            <p class="mainText">
+                כאן תוכלו לצפות בכרטיסים לסרטים ייחודיים שלא תמצאו בשום מקום אחר, עם מערכת נוחה להזמנת כרטיסים אונליין. תוכלו ליהנות מהסרטים עם כל המשפחה והחברים – כי אצלנו, חוויה לא רק צופים בה... אתם חיים אותה!
+            </p>
+        </section>
+
+        <!-- כותרת אמצעית לפירוט סרטים -->
+        <section id="moviesSection">
+            <h3>צפייה בסרטים (רק אצלנו)</h3>
+        <!--תחילת שורת הסרטים-->
+            <div class="movie-row">
+                <!-- סרט 1 -->
+                <div class="movie">
+                    <img src="./pictures/SenfimPoster.png" alt="Senfim">
+                    <p class="descriptionText">Senfim<br>סנפים - האקשן ממשיך</p>
+                </div>
+                <!-- סרט 2 -->
+                <div class="movie">
+                    <img src="./pictures/TogetherForeverPoster.png" alt="Together Forever">
+                    <p class="descriptionText">Together Forever<br>ביחד לנצח ולתמיד</p>
+                </div>
+                <!-- סרט 3 -->
+                <div class="movie">
+                    <img src="./pictures/HogeresPoster.png" alt="Hogeres">
+                    <p class="descriptionText">Hogeres<br>הוגרס</p>
+                </div>
+                <!-- סרט 4 -->
+                <div class="movie">
+                    <img src="./pictures/TOVET2Poster.png" alt="TOVET 2">
+                    <p class="descriptionText">TOVET 2<br>טובט וחברים 2</p>
+                </div>
+                <!-- סרט 5 -->
+                <div class="movie">
+                    <img src="./pictures/HencrockPoster.png" alt="Hencrock">
+                    <p class="descriptionText">Hencrock<br> השדים בלילה</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- אולמות התצוגה -->
+        <section id="theatersSection">
+            <h3>האולמות המטורפים שלנו </h3>
+            <div class="theater-row">
+                <div class="theater">
+                    <img src="./pictures/trainStationHall.png" alt="Train Station">
+                    <p class="descriptionText">אולם Train Station</p>
+                </div>
+                <div class="theater">
+                    <img src="./pictures/superSonicHall.png" alt="SuperSonic">
+                    <p class="descriptionText">אולם SuperSonic</p>
+                </div>
+                <div class="theater">
+                    <img src="./pictures/underTheSeaHall.png" alt="Under the Sea">
+                    <p class="descriptionText">אולם Under the Sea</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- יום הולדת בקולנוע -->
+        <section id="birthdaySection">
+            <h3>רוצים יום הולדת מהסרטים? לחצו כאן!</h3>
+            <img src="./pictures/birthday.png" alt="Birthday Party">
+            <!-- קישור עם כפתור input -->
+            <a href="birthday.html">
+                <input id="b" type="button" value="לימי הולדת">
+            </a>
+        </section>
+
+        <!--תפריט ראשי - תחתון-->
+        <footer>
+            <nav aria-label="main-nav">
+                <ul>
+                    <li><a href="Trailers and reviews.html"> טריילרים וביקורות</a></li>
+                    <li><a href="#">הזמנת כרטיסים</a></li>
+                    <li>
+                        <a href="#">אירועים בקולנוע</a>
+                        <ul>
+                            <li><a href="birthday.html">ימי הולדת </a></liclass="notWoking">
+                            <li><a href="#">בת מצוות </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="ContactUs.html">צור קשר</a></li>
+                    <li><a href=".//about.html">אודות האתר</a></li>
+                    <li><a href=".//siteMap.html">מפת האתר</a></li>
+                </ul>
+            </nav>
+        </footer>
+</body>
+</html>
